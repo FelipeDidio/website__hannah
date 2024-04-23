@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--GOOGLE ICONS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!--FAVICON-->
+    <link rel="icon" href="/assets/img/nn_favicon.png" />
+    <!--Link arq CSS-->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="logo__nav__container" id="home">
+        <img
+          src="/assets/img/logoHannaH.png"
+          alt="Logo da empresa HannaH"
+          class="logoHannaH"
+        />
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="index.html#ahannah" id="ir__para__hannah">Quem somos</a>
+          <a href="index.html#servicos">O que fazemos por aqui</a>
+          <a href="index.html#clientes">Clientes</a>
+          <a href="portifolio.html">Portifólio</a>
+          <a href="#contato">Contato</a>
+          <a href="#">Cadastre-se</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <h1 id="titulo">Cadastro para casting</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br />
+      </div>
+      <form>
+        <fieldset class="grupo">
+          <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required />
+          </div>
+
+          <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+          <div class="campo">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <!-- Campo de email com-->
+          <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div class="campo">
+            <label for="fone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" required />
+          </div>
+        </fieldset>
+        <fieldset>
+            <div class="campo">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" required />
+            </div>
+            <div class="campo">
+                <label for="numero">Número</label>
+                <input type="number" name="numero" id="numero" required />
+              </div>
+            <div class="campo">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" required />
+            </div>
+        </fieldset>
+      <!--Form Características Pessoais-->
+        <fieldset>
+          <p id="subtitulo">Características pessoais</p>
+          <div class="campo"></div>
+            <label for="altura">Altura</label>
+            <input type="number" name="altura" id="altura" required/>
+          </div>
+          <div class="campo"></div>
+            <label for="peso">Peso</label>
+            <input type="number" name="peso" id="peso" required/>
+          </div>
+          <div class="campo"></div>
+            <label for="manequim">Manequim</label>
+            <input type="number" name="manequim" id="manequim" required/>
+          </div>
+          <div class="campo"></div>
+            <label for="sapato">Sapato</label>
+            <input type="number" name="sapato" id="sapato" required/>
+          </div>
+        </fieldset>
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+      </form>
+    </main>
+    <footer class="container__rodape" id="contato">
+      <div id="rodape__contatos">
+        <h4>Entre em contato</h4>
+        <p>luara@hannahmkt.com.br</p>
+        <p>felipe@hannahmkt.com.br</p>
+      </div>
+      <div id="rodape__icons">
+        <a href="https://www.instagram.com/agenciahannah/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5551998631973&text=Oi,%20cheguei%20atrav%C3%A9s%20do%20site%20da%20ag%C3%AAncia."
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <p>®2024 HannaH Estratégias de Marketing</p>
+
+  <!--VOLTAR AO TOPO-->
+      <a href="#">
+        <img src="/assets/img/seta-para-cima.png" title="Voltar ao Topo" id="voltar__topo"
+      /></a>
+
+    </footer>
+    
+  </footer>
+  <script src="/assets/js/jquery-3.7.1.min.js"></script>
+  <script src="/assets/js/scrolltop.js"></script>
+
+  
+  <script>  
+      $("#voltar__topo").click(function (){
+          $("html, body").animate({scrollTop: "0px"}, 1500); 
+      });
+  </script>
+
+  <!-- <script>  
+      $("#ir__para__hannah").click(function (){
+          $("html, body").animate({scrollTop: "600px"}, 1500); 
+      });
+    </script> -->
+
+  </body>
+</html>
+

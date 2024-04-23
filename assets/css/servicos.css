@@ -1,0 +1,58 @@
+
+.servicos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 2%;
+}
+
+
+.container__servicos {
+display: flex;
+flex-grow: 1;
+width: 22%;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+border: 0.1px;
+border-radius: 0.45em;
+border-style: solid;
+border-color: rgba(145, 145, 145, 0.8);
+background-color: rgba(255, 255, 255,0.3);
+box-shadow: 0px 0px 10px rgb(145, 145, 145);
+margin: 1rem;
+padding:1em;
+}
+
+.container__servicos img {
+margin-bottom: 1.25em;
+width: 100%;
+}
+
+.container__servicos h3 {
+font-family: var(--fonte-texto);
+}
+.container__servicos p {
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.button__veja__mais {   /*pq não esta pegando estilos? */
+    text-decoration: none;
+    width: 6rem;
+    margin: auto;
+    font-family: var(--fonte-texto);
+    color: white !important;
+    background-color: var(--cor-vermelha);
+    border-radius: 0.25rem;
+    padding: 0.62rem;
+    transition: 0.2s;
+}
+
+.button__veja__mais:hover {
+    transform: scale(1.07);
+    transition: 0.2s;
+
+}

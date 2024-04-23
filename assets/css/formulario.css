@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    
+    font-size: 3em;
+    color: var(--cor-cinza-escuro);
+    text-shadow: none;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: var(--fonte-texto);
+    color: var(--cor-cinza-escuro);
+    margin-left: 10%;
+} 
+fieldset {
+    border: 0;
+}
+
+input, label, select, textarea, button {
+    font-family: var(--fonte-texto);
+    font-size: 1em;
+    color: var(--cor-cinza-escuro);
+    border-radius: 5px;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    font-family: var(--fonte-texto);
+    color: var(--cor-cinza-escuro);
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: var(--cor-cinza-escuro);
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}

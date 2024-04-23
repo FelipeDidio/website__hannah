@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+.apresentacao {
+    display: flex;
+    margin-top: 5em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.apresentacao__conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5em;
+    
+}
+
+.apresentacao__titulo {
+    font-family: var(--fonte-destaque);
+    color: var(--cor-vermelha);
+    font-size: 3.2em;
+    text-align: center;
+}
+
+.apresentacao__texto {
+    width: 50%;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: auto;
+    text-align: justify;
+}

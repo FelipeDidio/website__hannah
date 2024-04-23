@@ -1,0 +1,58 @@
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    justify-content: space-between;
+    font-family: var(--fonte-texto);
+    background-color: rgba(255, 255, 255,0.7);
+    box-shadow: 0 3px 10px rgb(229, 229, 229);
+}
+
+.logo__nav__container {
+    display: flex; /* Isso faz com que os elementos filhos fiquem em linha */
+    align-items: center; /* Isso alinha verticalmente os elementos filhos */
+    justify-content: space-evenly;
+}
+.logoHannaH {
+    width: 10em;
+    display: flex;
+    margin: 1.25em 6.25em 0 4%;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+nav a:link, a:visited {
+    text-decoration: none;
+    font-weight: 600;
+    color:var(--cor-vermelha);
+    transition: color 1s, font-size 1s;
+    -o-transition: color 1s, font-size 1s;
+    -moz-transition: color 1s, font-size 1s;
+    -webkit-transition: color 1s, font-size 1s;
+    margin-left: 0.62em ;
+    margin-top: 1.87em;
+    margin-bottom: 1.87em;
+    padding-top: 0.18em;
+    padding-right: 0.62em;
+}
+
+a:hover {
+    
+    font-weight: 600;
+    color:var(--cor-cinza-escuro);
+    transition: color 0.5s, font-size 1s;
+    -o-transition: color 1s, font-size 1s;
+    -moz-transition: color 1s, font-size 1s;
+    -webkit-transition: color 1s, font-size 1s;
+    
+}

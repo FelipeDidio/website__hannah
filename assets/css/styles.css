@@ -1,0 +1,128 @@
+@import url("abertura.css");
+@import url("apresentacao.css");
+@import url("clientes.css");
+@import url("footer.css");
+@import url("header.css");
+@import url("servicos.css");
+@import url("formulario.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --fonte-texto: "Montserrat", sans-serif;
+    --fonte-destaque: "Anton", sans-serif;
+    --cor-vermelha: rgb(163, 9, 9);
+    --cor-cinza-escuro: rgb(57, 57, 59);
+}
+
+body{
+    color: var(--cor-cinza-escuro);
+    width: 100%;
+    background-image: url(/assets/img/fundo_losango.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+     
+}
+::-webkit-scrollbar:horizontal {
+    display: none;
+}
+
+h1 {
+    display: flex;
+    position: relative;
+    font-family: var(--fonte-destaque);
+    /* width: 50%; */
+    text-align: center;
+    margin-top: -1.25em;
+    line-height: 7.5em;
+    font-size: 5.5em;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(14, 13, 13);
+}
+
+h2 {
+    font-size: 3em;
+    font-family: var(--fonte-destaque);
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+
+p {
+    font-size: clamp(1.2em,1em+1vw,1.4em);
+    line-height: 1.7em;
+    color: var(--cor-cinza-escuro);
+    text-align: start;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    /* column-count: 2;
+    column-width: 200px;
+    column-gap: 50px; */
+}
+
+#voltar__topo{
+    width: 3em;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Mobile First - MediaQuery */
+@media(max-width:834px) {
+    h2 {
+        font-size: 2.5em;
+    }
+   .apresentacao__titulo {
+        font-size: 2rem;
+   } 
+
+   .apresentacao__texto {
+        width: 75%;
+        font-size: 1rem;
+   }
+
+   .clientes {
+    flex-direction: column;
+   }
+
+   #clientes__titulo {
+    font-size: 2.3rem;
+    text-align: center;
+    margin: auto;
+   }
+
+   .container__servicos {
+    width: 100%;
+    margin: 2em;
+   }
+   #container__clientes__texto {
+    font-size: 0.8rem;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+   }
+
+   #container__clientes {
+    width: 95%;
+    text-align: center;
+   }
+
+   #container__clientes__logos img {
+    width: 6em;
+   }
+}
