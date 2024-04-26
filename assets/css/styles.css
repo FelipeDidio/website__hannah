@@ -35,21 +35,19 @@ body{
 h1 {
     display: flex;
     position: relative;
+    margin-top: 1em;
     font-family: var(--fonte-destaque);
     /* width: 50%; */
     text-align: center;
-    margin-top: -1.25em;
-    line-height: 7.5em;
     font-size: 5.5em;
-    align-items: center;
-    text-align: center;
-    color: white;
+    justify-content: center;
+    color: var(--cor-cinza-escuro);
     text-shadow: 2px 2px 5px rgb(14, 13, 13);
 }
 
 h2 {
     font-size: 3em;
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-texto);
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
@@ -59,6 +57,13 @@ h2 {
     margin-bottom: 1em;
 }
 
+h3 {
+    font-size: 1.5em;
+    font-family: var(--fonte-destaque);
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
 
 p {
     font-size: clamp(1.2em,1em+1vw,1.4em);
@@ -83,6 +88,45 @@ p {
 
 /* Mobile First - MediaQuery */
 @media(max-width:834px) {
+    .material-symbols-outlined {
+        position: absolute;
+        top: 40px;
+        right: 100px;
+
+        color: var(--cor-vermelha);
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    header {
+        height: auto;
+    }
+    
+    nav {
+        display: none;
+        height: auto;
+        position: relative;
+        justify-content: flex-start;
+        top: 100px;
+        left: 5px;
+    }
+
+    .logoHannaH {
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin: -3em;
+    }
+
+    a {
+        font-size: 0.9em;
+    }
+
     h2 {
         font-size: 2.5em;
     }
@@ -106,7 +150,7 @@ p {
    }
 
    .container__servicos {
-    width: 100%;
+    width: 80%;
     margin: 2em;
    }
    #container__clientes__texto {
@@ -125,4 +169,12 @@ p {
    #container__clientes__logos img {
     width: 6em;
    }
+
+   
+}
+
+@media(min-width:780px){
+    .material-symbols-outlined{
+        display:none;
+    }
 }

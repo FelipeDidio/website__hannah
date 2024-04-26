@@ -1,6 +1,7 @@
 
 .cabecalho {
     width: 100%;
+    height: auto;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -20,9 +21,10 @@
 }
 .logoHannaH {
     width: 10em;
-    display: flex;
-    margin: 1.25em 6.25em 0 4%;
-
+    margin: auto;
+    
+    padding: 1em;
+    
 }
 
 nav {
@@ -54,5 +56,14 @@ a:hover {
     -o-transition: color 1s, font-size 1s;
     -moz-transition: color 1s, font-size 1s;
     -webkit-transition: color 1s, font-size 1s;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.material-sumbols-outlined {
     
 }

@@ -32,23 +32,28 @@
     <title>HannaH Mkt</title>
   </head>
   <body>
-    <!--Menu de navegação - cabeçalho com logo e links -->
+  <!--Menu de navegação - cabeçalho com logo e links -->
     <header class="cabecalho">
       <div class="logo__nav__container" id="home">
         <img
           src="/assets/img/logoHannaH.png"
           alt="Logo da empresa HannaH"
           class="logoHannaH"
-        />
+        /><span class="material-symbols-outlined">menu</span>
         <nav>
-          <a href="#" id="ir__para__topo">Home</a>
-          <a href="index.html#ahannah" id="ir__para__hannah">Quem somos</a>
-          <a href="index.html#servicos"id="ir__para__servicos">O que fazemos por aqui</a>
-          <a href="index.html#clientes" id="ir__para__clientes">Clientes</a>
-          <!-- <a href="portifolio.html">Portifólio</a> -->
-          <a href="#contato" id="ir__para__contato">Contato</a>
-          <a href="formulario.html">Cadastre-se</a>
+          
+          <ul>
+            <li><a href="#" id="ir__para__topo">Home</a></li>
+            <li><a href="index.html#ahannah" id="ir__para__hannah">Quem somos</a></li>
+            <li><a href="index.html#servico s"id="ir__para__servicos">O que fazemos por aqui</a></li>
+            <li><a href="index.html#clientes" id="ir__para__clientes">Clientes</a></li>
+            <!-- <a href="portifolio.html">Portifólio</a> -->
+            <li><a href="#contato" id="ir__para__contato">Contato</a></li>
+            <li><a href="formulario.html">Cadastre-se</a></li>
+          </ul>
+          
         </nav>
+        
       </div>
     </header>
 
@@ -59,7 +64,7 @@
         <!-- <img src="/assets/img/imagemDoMain.png" alt="foto bala de serviço"> -->
       </section>
     <!--Texto de apresentação da Empresa -->
-      <h2 id="ahannah">Prazer, somos a HannaH</h2>
+      <h1 id="ahannah">Prazer, somos a HannaH</h1>
       <section class="apresentacao">
         <div class="apresentacao__conteudo">
           <span class="apresentacao__titulo">NASCEMOS NO ANO 2009</span>
@@ -205,6 +210,14 @@
     <script src="/assets/js/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/scrolltop.js"></script>
 
+  <!--JQuery toogle nav -->
+  <script>
+    $(".material-symbols-outlined").click(function(){
+        
+        $("nav").toggle(800);
+    })
+</script>
+
   <!--JQuery VOLTAR AO TOPO-->  
     <script>  
         $("#voltar__topo").click(function (){
@@ -227,7 +240,7 @@
   <!--JS id p/ a âncora serviços -->
     <script>  
         $("#ir__para__servicos").click(function (){
-            $("html, body").animate({scrollTop: "1800px"}, 1500); 
+            $("html, body").animate({scrollTop: "1750px"}, 1500); 
         });
     </script>
   <!--JS id p/ a âncora clientes -->
@@ -239,7 +252,7 @@
   <!--JS id p/ a âncora contato -->  
     <script>  
         $("#ir__para__contato").click(function (){
-            $("html, body").animate({scrollTop: "3450"}, 1500); 
+            $("html, body").animate({scrollTop: "3500"}, 1500); 
         });
     </script>
 

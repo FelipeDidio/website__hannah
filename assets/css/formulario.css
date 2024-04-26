@@ -3,22 +3,54 @@
     padding: 0;
 }
 
+#textos__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Elementos com o ID "titulo" */
 #titulo {
-    
+    margin: auto;
     font-size: 3em;
     color: var(--cor-cinza-escuro);
     text-shadow: none;
+    
 } 
 
 /* Elementos com o ID "subtitulo" */
 #subtitulo {
+    
     font-family: var(--fonte-texto);
     color: var(--cor-cinza-escuro);
-    margin-left: 10%;
+    
 } 
+
+.geral__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    
+    justify-content: center;
+}
+
 fieldset {
     border: 0;
+}
+.parte__formulario {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+     
+    justify-content: flex-start;
+ 
+}
+.parte__formulario__imagens {
+    display: flex;
+    flex-direction: column;  
+      
+    
 }
 
 input, label, select, textarea, button {
@@ -27,10 +59,14 @@ input, label, select, textarea, button {
     color: var(--cor-cinza-escuro);
     border-radius: 5px;
 }
+ input {
+    border: 1px solid;
+ }
 
 /* Elementos de classe "campo" */
 .campo {
     margin-bottom: 1em;
+    margin-left: 1em;
 }
 
 .campo label {
@@ -40,26 +76,31 @@ input, label, select, textarea, button {
     display: block;
 }
 
-/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo {
-    float:  left;
-    margin-right: 1em;
+.campo #numero, #altura, #peso, #manequim, #sapato {
+    width: 5.5em;
 }
 
 /* Elemento de classe "botao" */
 .botao {
     font-size: 1.2em;
-    background: var(--cor-cinza-escuro);
+    width: 10em;
+    height: 2.3em;
+    background: var(--cor-vermelha);
     border: 0;
     cursor: pointer;
-    margin-bottom: 1em;
+    margin:1em 0 2em 0;
     color: #ffffff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
+    position: static;
     top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    /* left: 50%; */
+    /* margin-right: -50%; */
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.botao:hover{
+    transform: scale(1.05);
 }
