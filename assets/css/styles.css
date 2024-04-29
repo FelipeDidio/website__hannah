@@ -22,7 +22,7 @@
 body{
     color: var(--cor-cinza-escuro);
     width: 100%;
-    background-image: url(/assets/img/fundo_losango.png);
+    background-image: url(assets/img/fundo_losango.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
