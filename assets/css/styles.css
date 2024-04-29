@@ -89,9 +89,7 @@ p {
 /* Mobile First - MediaQuery */
 @media(max-width:834px) {
     .material-symbols-outlined {
-        position: absolute;
-        top: 40px;
-        right: 100px;
+
 
         color: var(--cor-vermelha);
         cursor: pointer;
@@ -101,13 +99,18 @@ p {
     header {
         height: auto;
     }
+
+    .logo__nav__container {
+        justify-content: center;
+        flex-direction: column;
+    }
     
     nav {
         display: none;
         height: auto;
         position: relative;
         justify-content: flex-start;
-        top: 100px;
+        top: 30px;
         left: 5px;
     }
 
@@ -122,6 +125,11 @@ p {
         justify-content: left;
         margin: -3em;
     }
+
+    
+ul {
+    margin-bottom: 85px;
+}
 
     a {
         font-size: 0.9em;

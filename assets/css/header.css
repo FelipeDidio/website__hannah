@@ -5,7 +5,7 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    position: sticky;
+    position: fixed;
     top:0;
     z-index: 10;
     justify-content: space-between;
@@ -17,7 +17,7 @@
 .logo__nav__container {
     display: flex; /* Isso faz com que os elementos filhos fiquem em linha */
     align-items: center; /* Isso alinha verticalmente os elementos filhos */
-    justify-content: space-evenly;
+
 }
 .logoHannaH {
     width: 10em;
@@ -61,8 +61,8 @@ a:hover {
 ul li{
     list-style: none;
     display: inline-block;
-
 }
+
 
 .material-sumbols-outlined {
     
