@@ -38,15 +38,21 @@
           alt="Logo da empresa HannaH"
           class="logoHannaH"
         />
+        <span class="material-symbols-outlined">menu</span>
         <nav>
-          <a href="index.html">Home</a>
-          <a href="index.html#ahannah" id="ir__para__hannah">Quem somos</a>
-          <a href="index.html#servicos">O que fazemos por aqui</a>
-          <a href="index.html#clientes">Clientes</a>
-          <!-- <a href="portifolio.html">Portifólio</a> -->
-          <a href="#contato">Contato</a>
-          <a href="#">Cadastre-se</a>
+          
+          <ul>
+            <li><a href="#" id="ir__para__topo">Home</a></li>
+            <li><a href="index.html#ahannah" id="ir__para__hannah">Quem somos</a></li>
+            <li><a href="index.html#servicos" id="ir__para__servicos">O que fazemos por aqui</a></li>
+            <li><a href="index.html#clientes" id="ir__para__clientes">Clientes</a></li>
+            <!-- <a href="portifolio.html">Portifólio</a> -->
+            <li><a href="#contato" id="ir__para__contato">Contato</a></li>
+            <li><a href="formulario.html">Cadastre-se</a></li>
+          </ul>
+          
         </nav>
+        
       </div>
     </header>
     <main>
@@ -143,7 +149,7 @@
         </div>
         <fieldset class="parte__formulario__apresenteSe">
           <div class="campo">
-            <label for="apresenteSe">Use este espaço e nos conte um pouco sobre suas enxperiências e tipos de ação em que você ja atuou</label>
+            <label for="apresenteSe">Use este espaço e nos conte um pouco sobre suas enxperiências e tipos de ações em que você ja atuou</label>
             <textarea id="apresenteSe" name="apresenteSe" rows="10" cols="50" >
             </textarea>
           </div>
@@ -180,8 +186,17 @@
     </footer>
     
   </footer>
-  <script src="assets/js/jquery-3.7.1.min.js"></script>
-  <script src="assets/js/scrolltop.js"></script>
+  <!-- JQuery's-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/scrolltop.js"></script>
+
+  <!--JQuery toogle nav -->
+  <script>
+    $(".material-symbols-outlined").click(function(){
+        
+        $("nav").toggle(800);
+    })
+</script>
 
   
   <script>  

@@ -13,7 +13,7 @@
 
 .parallax {
    
-    background-image: url("/assets/img/NatalSVale.jpg");
+    background-image: url("../img/NatalSVale.jpg");
   
     /* Set a specific height */
     min-height: 31em;

@@ -28,6 +28,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--FANCYBOX-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
 
     <title>HannaH Mkt</title>
   </head>
@@ -97,13 +102,14 @@
       <h2 id="servicos">O que fazemos por aqui</h2>
       <section class="servicos">
         <div class="container__servicos">
-          <img src="assets/img/imagemDoMain.png" />
+          <img src="assets/img/imagemDoMain.png"/>
           <h3>Receptivo</h3>
           <p>
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="#" class="button__veja__mais">Veja mais</a>
+          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
+             <img src="" class="img__servicos"> Veja mais</a>
         </div>
         <div class="container__servicos">
           <img src="assets/img/imagemDoMain.png" />
@@ -112,7 +118,8 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="#" class="button__veja__mais">Veja mais</a>
+          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
+            <img src="" class="img__servicos"> Veja mais</a>
         </div>
         <div class="container__servicos">
           <img src="assets/img/imagemDoMain.png" />
@@ -121,7 +128,8 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="#" class="button__veja__mais">Veja mais</a>
+          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
+            <img src="" class="img__servicos"> Veja mais</a>
         </div>
         <div class="container__servicos">
           <img src="assets/img/imagemDoMain.png" />
@@ -130,7 +138,8 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="#" class="button__veja__mais">Veja mais</a>
+          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
+            <img src="" class="img__servicos"> Veja mais</a>
         </div>
         <div class="container__servicos">
           <img src="assets/img/imagemDoMain.png" />
@@ -139,7 +148,8 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="#" class="button__veja__mais">Veja mais</a>
+          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
+              <img src="" class="img__servicos"> Veja mais</a>
         </div>
         <div class="container__servicos">
           <img src="assets/img/imagemDoMain.png" />
@@ -148,7 +158,8 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="#" class="button__veja__mais">Veja mais</a>
+          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
+            <img src="" class="img__servicos"> Veja mais</a>
         </div>
       </section>
     <!-- Seção Clientes -->
@@ -236,19 +247,24 @@
   <!--JS id p/ a âncora empresa -->
     <script>  
         $("#ir__para__hannah").click(function (){
-            $("html, body").animate({scrollTop: "680px"}, 1500); 
+            $("html, body").animate({scrollTop: "600px"}, 1500); 
         });
     </script>
   <!--JS id p/ a âncora serviços -->
     <script>  
         $("#ir__para__servicos").click(function (){
-            $("html, body").animate({scrollTop: "1800px"}, 1500); 
+            $("html, body").animate({scrollTop: "1680px"}, 1500); 
         });
+    </script>
+
+  <!--JS para poup-up dos serviços-->
+    <script>
+      Fancybox.bind("[data-fancybox]")
     </script>
   <!--JS id p/ a âncora clientes -->
     <script>  
         $("#ir__para__clientes").click(function (){
-            $("html, body").animate({scrollTop: "3150px"}, 1500); 
+            $("html, body").animate({scrollTop: "3100px"}, 1500); 
         });
     </script>
   <!--JS id p/ a âncora contato -->  
