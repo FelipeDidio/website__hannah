@@ -70,3 +70,35 @@
 }
 
 
+@media(max-width:834px) {
+    .clientes {
+        flex-direction: column;
+       }
+    
+       #clientes__titulo {
+        font-size: 2.3rem;
+        text-align: center;
+        margin: auto;
+       }
+    
+       .container__servicos {
+        width: 80%;
+        margin: 2em;
+       }
+       #container__clientes__texto {
+        font-size: 0.8rem;
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+       }
+    
+       #container__clientes {
+        width: 95%;
+        text-align: center;
+       }
+
+       #container__clientes__logos img {
+        width: 6em;
+       }
+}

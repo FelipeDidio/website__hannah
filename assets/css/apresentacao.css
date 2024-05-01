@@ -32,3 +32,22 @@
     margin: auto;
     text-align: justify;
 }
+
+
+
+@media(max-width:370px) {
+    .apresentacao__titulo {
+        font-size: 1.9em;
+   }
+}
+
+@media(max-width:834px) {
+    .apresentacao__titulo {
+        font-size: 2rem;
+   }
+
+   .apresentacao__texto {
+        width: 75%;
+        font-size: 1rem;
+   }
+}

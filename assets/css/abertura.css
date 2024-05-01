@@ -41,3 +41,23 @@
     border-color: rgb(147, 147, 151);
     border-radius: 16px;
 } */
+
+
+@media(max-width:370px) {
+    #abertura {
+        background-image: none;
+        background-size: 100%;
+        margin-top: 0;
+     }
+     .parallax {
+         display: none;
+     }
+}
+
+@media(max-width:540px) {
+    #abertura.parallax {
+        background-image: url("../img/NatalSVale_mobile.webp");
+        background-size: 120%;
+        margin-top: -90px;
+    }
+}

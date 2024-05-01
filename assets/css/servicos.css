@@ -32,7 +32,8 @@ width: 100%;
 }
 
 .container__servicos h3 {
-font-family: var(--fonte-texto);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
 }
 .container__servicos p {
     font-weight: 500;
@@ -55,4 +56,22 @@ font-family: var(--fonte-texto);
     transform: scale(1.07);
     transition: 0.2s;
 
+}
+
+
+
+
+@media(min-width:540px) {
+    .container__servicos img {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        margin-top: 0.5em;
+        margin-bottom: 0;
+    }
+
+    .container__servicos p {
+        padding: 0;
+    }
 }

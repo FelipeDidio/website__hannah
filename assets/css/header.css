@@ -67,3 +67,43 @@ ul li{
 .material-sumbols-outlined {
     
 }
+
+
+
+@media(max-width:834px) {
+    header {
+        height: auto;
+    }
+
+    .logo__nav__container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+        height: auto;
+        position: relative;
+        justify-content: flex-start;
+        top: 30px;
+        left: 5px;
+    }
+
+    .logoHannaH {
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin: -3em;
+    }
+
+    ul {
+        margin-bottom: 85px;
+    }
+
+
+}
