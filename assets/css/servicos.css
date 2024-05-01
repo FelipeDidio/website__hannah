@@ -10,8 +10,8 @@
 
 .container__servicos {
 display: flex;
-flex-grow: 1;
-width: 22%;
+flex-grow: 3;
+width: 25%;
 flex-direction: column;
 justify-content: center;
 text-align: center;
@@ -61,7 +61,10 @@ width: 100%;
 
 
 
-@media(min-width:540px) {
+@media(max-width:540px) {
+    .container__servicos {
+        width: 80%;
+    }
     .container__servicos img {
         margin-bottom: 0;
     }
