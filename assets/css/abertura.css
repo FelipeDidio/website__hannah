@@ -16,7 +16,7 @@
     background-image: url("../img/NatalSVale.jpg");
   
     /* Set a specific height */
-    min-height: 31em;
+    min-height: 25em;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
