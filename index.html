@@ -28,11 +28,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--FANCYBOX-->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
+    <!--LIGHTBOX-->
+    <!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/magnific-popup.css">
 
     <title>HannaH Mkt</title>
   </head>
@@ -108,8 +106,7 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
-             <img src="" class="img__servicos"> Veja mais</a>
+          <a href="assets/img/imagemDoMain.png" class="button__veja__mais image-link img__servicos"> Veja mais</a>
         </div>
         <div class="container__servicos">
           <img src="assets/img/acoes_externas.webp" />
@@ -118,8 +115,7 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
-            <img src="" class="img__servicos"> Veja mais</a>
+          <a href="assets/img/acoes_externas.webp" class="button__veja__mais image-link"> Veja mais</a>
         </div>
         <div class="container__servicos">
           <img src="assets/img/imagemDoMain.png" />
@@ -128,8 +124,7 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
-            <img src="" class="img__servicos"> Veja mais</a>
+          <a href="assets/img/imagemDoMain.png" class="button__veja__mais image-link"> Veja mais</a>
         </div>
         <div class="container__servicos">
           <img src="assets/img/positicacao.webp" />
@@ -138,8 +133,7 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
-            <img src="" class="img__servicos"> Veja mais</a>
+          <a href="assets/img/positicacao.webp" class="button__veja__mais image-link"> Veja mais</a>
         </div>
         <div class="container__servicos">
           <img src="assets/img/imagemDoMain.png" />
@@ -148,8 +142,7 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
-              <img src="" class="img__servicos"> Veja mais</a>
+          <a href="assets/img/imagemDoMain.png" class="button__veja__mais image-link"> Veja mais</a>
         </div>
         <div class="container__servicos">
           <img src="assets/img/rh_Natal.webp" />
@@ -158,8 +151,7 @@
             Aqui neste paragrafo explica-se resumidamente um pouco deste tipo de
             ação
           </p>
-          <a href="assets/img/imagemDoMain.png" class="button__veja__mais" data-fancybox="gallery">
-            <img src="" class="img__servicos"> Veja mais</a>
+          <a href="assets/img/rh_Natal.webp" class="button__veja__mais image-link"> Veja mais</a>
         </div>
       </section>
     <!-- Seção Clientes -->
@@ -222,6 +214,7 @@
   <!-- JQuery's-->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/scrolltop.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
 
   <!--JQuery toogle nav -->
   <script>
@@ -237,7 +230,15 @@
             $("html, body").animate({scrollTop: "0px"}, 1500); 
         });
     </script>
-
+<!-- CORE LIGHTBOX-->
+  <script>
+    $(document).ready(function() {
+      $('.img__servicos').magnificPopup({
+          delegate: 'a',
+          type:'image',
+        gallery:{enable: true}});
+    });
+    </script>
     <!--JS id p/ a âncora home -->
     <script>  
         $("#ir__para__topo").click(function (){
