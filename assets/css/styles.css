@@ -4,7 +4,7 @@
 @import url("footer.css");
 @import url("header.css");
 @import url("servicos.css");
-@import url("formulario.css");
+@import url("formulario.css"); 
 
 *{
     margin: 0;
@@ -19,6 +19,10 @@
     --cor-cinza-escuro: rgb(57, 57, 59);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     color: var(--cor-cinza-escuro);
     width: 100%;
@@ -28,9 +32,10 @@ body{
     background-size: cover;
 
 }
-::-webkit-scrollbar:horizontal {
+
+/* ::-webkit-scrollbar:horizontal {
     display: none;
-}
+} */
 
 h1 {
     display: flex;
@@ -39,7 +44,7 @@ h1 {
     font-family: var(--fonte-destaque);
     /* width: 50%; */
     text-align: center;
-    font-size: 5.2em;
+    font-size: 5em;
     justify-content: center;
     color: var(--cor-cinza-escuro);
     text-shadow: 2px 2px 4px rgb(14, 13, 13);
@@ -48,8 +53,6 @@ h1 {
 h2 {
     font-size: 3em;
     font-family: var(--fonte-texto);
-    font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
     text-align: center;
     align-items: center;
@@ -66,17 +69,13 @@ h3 {
 }
 
 p {
-    font-size: clamp(1.2em,1em+1vw,1.4em);
+    font-size: 1.3em;
     line-height: 1.7em;
     color: var(--cor-cinza-escuro);
     text-align: start;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    /* column-count: 2;
-    column-width: 200px;
-    column-gap: 50px; */
 }
 
 #voltar__topo{
@@ -108,11 +107,14 @@ p {
     }
 }
 
-@media(min-width:780px){
+@media(min-width:834px){
     .material-symbols-outlined{
         display:none;
     }
 }
+/* HEADER  */
+
+
 
 @media(min-width:540px) {
     /* voltar ao topo*/

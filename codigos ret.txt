@@ -1,0 +1,40 @@
+<!--JS id p/ a âncora home -->
+</script>
+    <!--JS id p/ a âncora home -->
+    <script>  
+        $("#ir__para__topo").click(function (){
+            $("html, body").animate({scrollTop: "0px"}, 1500); 
+        });
+    </script>
+  <!--JS id p/ a âncora empresa -->
+    <script>  
+        $("#ir__para__hannah").click(function (){
+            $("html, body").animate({scrollTop: "600px"}, 1500); 
+        });
+    </script>
+  <!--JS id p/ a âncora serviços -->
+    <script>  
+        $("#ir__para__servicos").click(function (){
+            $("html, body").animate({scrollTop: "1680px"}, 1500); 
+        });
+    </script>
+
+    <!--JS id p/ a âncora clientes -->
+    <script>  
+        $("#ir__para__clientes").click(function (){
+            $("html, body").animate({scrollTop: "3100px"}, 1500); 
+        });
+    </script>
+  <!--JS id p/ a âncora contato -->  
+    <script>  
+        $("#ir__para__contato").click(function (){
+            $("html, body").animate({scrollTop: "3700"}, 1500); 
+        });
+    </script>
+
+<!--JS para poup-up dos serviços-->
+    <script>
+      Fancybox.bind("[data-fancybox]")
+    </script>
+    
+

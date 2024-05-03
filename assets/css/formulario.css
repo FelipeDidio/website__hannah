@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#textos__form {
+.textos__form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,10 +20,11 @@
 } 
 
 /* Elementos com o ID "subtitulo" */
-#subtitulo {
-    
+
+.subtitulo {   
     font-family: var(--fonte-texto);
     color: var(--cor-cinza-escuro);
+    text-align: center;
     
 } 
 
@@ -98,7 +99,7 @@ label {
     width: 5.5em;
 }
 
-#imagemCasting {
+.imagemCasting {
     color: var(--cor-vermelha);
     border:none;
     
