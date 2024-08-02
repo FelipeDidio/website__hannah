@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--GOOGLE ICONS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!--FAVICON-->
+    <link rel="icon" href="/assets/img/nn_favicon.png" />
+    <!--Link arq CSS-->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--LIGHTBOX-->
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="/assets/js/jquery.magnific-popup.js" />
+
+    <title>Login Usuário</title>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="logo__nav__container" id="home">
+        <img
+          src="/assets/img/logoHannaH.png"
+          alt="Logo da empresa HannaH"
+          class="logoHannaH"
+        />
+        <span class="material-symbols-outlined">menu</span>
+        <nav>
+          <ul>
+            <li><a href="index.html" id="ir__para__topo">Home</a></li>
+            <li>
+              <a href="index.html#ahannah" id="ir__para__hannah">Quem somos</a>
+            </li>
+            <li>
+              <a href="index.html#servicos" id="ir__para__servicos"
+                >O que fazemos por aqui</a
+              >
+            </li>
+            <li>
+              <a href="index.html#clientes" id="ir__para__clientes">Clientes</a>
+            </li>
+            <!-- <a href="portifolio.html">Portifólio</a> -->
+            <li><a href="#contato" id="ir__para__contato">Contato</a></li>
+            <li><a href="formulario.html">Cadastre-se</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="textos__form">
+        <h1 id="titulo">Cadastro para casting</h1>
+        <h3 class="subtitulo">Complete suas informações</h3>
+        <br />
+
+        <!-- Formulário de Login -->
+        <form action="">
+          <fieldset class="parte__formulario campo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+
+            <label for="nome">Usuário</label>
+            <input type="text" name="userario" id="usuario" required />
+          </fieldset>
+
+          <fieldset class="parte__formulario campo">
+            <label for="nome">Senha</label>
+            <input type="password" name="senha" id="senha" required />
+          </fieldset>
+
+          <!-- Botão para enviar o formulário -->
+          <button class="botao" type="submit" onsubmit="">Entrar</button>
+        </form>
+      </section>
+    </main>
+    <!-- Rodapé -->
+    <footer class="container__rodape" id="contato">
+      <div id="rodape__contatos">
+        <h4>Entre em contato</h4>
+        <p>luara@hannahmkt.com.br</p>
+        <p>felipe@hannahmkt.com.br</p>
+      </div>
+      <div id="rodape__icons">
+        <a href="https://www.instagram.com/agenciahannah/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5551998631973&text=Oi,%20cheguei%20atrav%C3%A9s%20do%20site%20da%20ag%C3%AAncia."
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a
+          href="malito:felipe@hannahmkt.com.br?subject=Email chegando do site&cc=luara@hannahmkt.com.br&bcc=felipeverdade@gmail.com"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+      <p>®2024 HannaH Estratégias de Marketing</p>
+
+      <!--VOLTAR AO TOPO-->
+      <a href="#">
+        <img
+          src="/assets/img/seta-para-cima.png"
+          title="Voltar ao Topo"
+          id="voltar__topo"
+      /></a>
+    </footer>
+
+    <!-- JQuery's-->
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/scrolltop.js"></script>
+
+    <!--JQuery toogle nav -->
+    <script>
+      $(".material-symbols-outlined").click(function () {
+        $("nav").toggle(800);
+      });
+    </script>
+  </body>
+</html>
