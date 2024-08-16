@@ -74,6 +74,7 @@ label {
 
  input:focus {
     border-color: var(--cor-vermelha);
+    background-color: var(--cor-vermelha3);
  }
 
 /* Elementos de classe "campo" */
