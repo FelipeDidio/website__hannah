@@ -51,13 +51,13 @@ width: 100%;
     padding: 1rem;
 }
 
-.button__veja__mais {   /*pq não esta pegando estilos? */
+.button__veja__mais {   
     text-decoration: none;
     width: 6rem;
     margin: auto;
     font-family: var(--fonte-texto);
     color: white !important;
-    background-color: var(--cor-vermelha);
+    background: radial-gradient(circle, var(--cor-vermelha), var(--cor-vermelha2));
     border-radius: 0.25rem;
     padding: 0.62rem;
     transition: 0.2s;

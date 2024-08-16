@@ -1,5 +1,6 @@
 
 footer {
+    padding: 1rem;
     width: 100%;
     height: 10em;
     display: flex;
@@ -24,6 +25,14 @@ h4 {
 .container__rodapé {
     
   
+}
+
+.container__rodape__conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    margin: 0 20rem ;
+
 }
 
 #rodape__contatos p {
